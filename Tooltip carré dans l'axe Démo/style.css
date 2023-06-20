@@ -1,0 +1,41 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main > img {
+  width: 150px;
+}
+
+#tooltip {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  backdrop-filter: blur(8px);
+  --webkit-backdrop-filter: blur(8px);
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-align: justify;
+
+  max-width: 25vw;
+  position: fixed;
+  z-index: 1;
+
+  display: none;
+}
